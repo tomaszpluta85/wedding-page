@@ -2,16 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
-    background-image: url("../img/para.jpg");
+    background: url("../img/para.jpg") no-repeat 45% center fixed;
     background-size: cover;
     font-family: sans-serif;
 }
-.login-wrapper {
+.login__container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.login-wrapper {
     height: 323px;
     width: 349px;
     display: flex;
@@ -66,3 +72,10 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+    body {
+    }
+}
