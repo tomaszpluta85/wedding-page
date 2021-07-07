@@ -1,68 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
-    background-image: url("../img/para.jpg");
+    font-family: 'Open Sans', sans-serif;
+    background: url("../img/para.jpg") no-repeat 45% 60% fixed;
     background-size: cover;
-    font-family: sans-serif;
+    font-size: 16px;
 }
-.login-wrapper {
 
-    height: 323px;
-    width: 349px;
+.login__container {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-
-
+    padding: 16px;
 }
-.form {
-    position: center;
 
-    max-width: 323px;
-    padding: 80px 40px 40px;
-    border-radius: 10px;
-    background: rgba(255,255,255,0.3);
+.login {
+    max-width: 349px;
+    display: flex;
+    flex-direction: column;
+    padding: 36px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
 }
-.form h2 {
+
+.login__title {
     text-transform: uppercase;
     margin-bottom: 2rem;
 }
 
-.form .input-group {
-    position: relative;
+.login__description {
+    margin-bottom: 1rem;
+}
+
+.login__input-group {
 
 }
-.form .input-group input {
+
+.login__input {
+    background: rgba(255, 255, 255, .55);
+    padding: .5rem 1rem;
+    border-radius: 6px;
+    font-size: .875rem;
     width: 100%;
-    font-size: 1rem;
-    border-radius: 5px;
-    margin-top: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(112, 112, 112, .70);
+}
 
+.login__footer {
+    display: flex;
+    justify-content: space-between;
 }
-.form .input-group label {
-    position: absolute;
-    margin-top: 10px;
-    top: 0;
-    left: 0;
-    font-size: 1rem;
-    pointer-events: none;
+
+.login__forgot-pw {
+    font-size: .75rem;
+    color: #333333;
+    margin-left: 1rem;
 }
-.submit-btn {
-    display: block;
-    margin-left: auto;
+
+.login__submit-btn {
     border: none;
     outline: none;
     background: #262626;
     font-size: 1rem;
     color: white;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 8px 28px;
+    border-radius: 6px;
     cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    body {
+        background-position-x: 75%;
+    }
+
+    .login {
+        transform: translateX(160px);
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-position-x: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .login {
+        transform: translateX(260px);
+    }
+}

@@ -9,29 +9,25 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="login-wrapper">
-        <form action="" class="form">
-            <h2>Log in</h2>
-            <p>Log in with your data that you received from
-                the photographer</p>
-            <div class="input-group">
-                <input type="text" name="loginUser" id="loginUser" required>
-                <label for="loginUser">E-mail</label>
-            </div>
-            <div class="input-group">
-                <input type="password" name="loginPassword" id="loginPassword" required>
-                <label for="loginPassword">Password</label>
-            </div>
-            <div>
-                <a href="#" class="forgot-pw">Forgot Password?</a>
-                <input type="submit" value="Login" class="submit-btn">
-            </div>
-        </form>
 
-    </div>
+<div class="login__container">
+    <form action="" class="login">
+        <h2 class="login__title">Log in</h2>
 
+        <p class="login__description">Log in with your data that you received from
+            the photographer</p>
 
-<span></span>
-<div></div>
+        <div class="login__input-group">
+            <input type="text" name="loginUser" id="loginUser" required placeholder="E-mail" class="login__input">
+            <input type="password" name="loginPassword" id="loginPassword" required placeholder="Password"
+                   class="login__input">
+        </div>
+
+        <div class="login__footer">
+            <a href="#" class="login__forgot-pw">Forgot Password?</a>
+            <input type="submit" value="Login" class="login__submit-btn">
+        </div>
+    </form>
+</div>
 </body>
 </html>
