@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,36 +7,30 @@
 }
 
 body {
+    font-family: 'Open Sans', sans-serif;
     background: url("../img/para.jpg") no-repeat 45% center fixed;
     background-size: cover;
-    font-family: sans-serif;
 }
+
 .login__container {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 16px;
 }
 
-.login-wrapper {
-    height: 323px;
-    width: 349px;
+.login {
+    max-width: 349px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-}
-.form {
-    position: center;
-
-    max-width: 323px;
-    padding: 80px 40px 40px;
-    border-radius: 10px;
+    flex-direction: column;
+    padding: 36px;
+    border-radius: 6px;
     background: rgba(255,255,255,0.3);
     backdrop-filter: blur(10px);
 }
+
 .form h2 {
     text-transform: uppercase;
     margin-bottom: 2rem;
