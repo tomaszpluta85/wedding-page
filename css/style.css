@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-image: url("../img/para.jpg");
+    background-size: cover;
+    font-family: sans-serif;
+}
+.login-wrapper {
+
+    height: 323px;
+    width: 349px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.form {
+    position: center;
+
+    max-width: 323px;
+    padding: 80px 40px 40px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
+}
+.form h2 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.form .input-group {
+    position: relative;
+
+}
+.form .input-group input {
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 10px;
+
+}
+.form .input-group label {
+    position: absolute;
+    margin-top: 10px;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+    pointer-events: none;
+}
+.submit-btn {
+    display: block;
+    margin-left: auto;
+    border: none;
+    outline: none;
+    background: #262626;
+    font-size: 1rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
